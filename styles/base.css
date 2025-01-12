@@ -5,23 +5,23 @@
 }
 
 body {
-	font-family: "Sansita", sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
+    text-align: center;
 	background-color: #2E5077;
     color: #fff;
-	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 20px;
 	border: 1px solid rgb(0 0 0 / 0.1);
 }
 
-header,
-main {
-	margin: 0 auto;
+header h1 {
+    padding: 20px;
 }
+
+
 
 h1 {
 	font-size: 2rem;
@@ -36,9 +36,9 @@ h2 {
     border-radius: 3%;
 
 }
-nav {
+nav ul {
 	background-color: #36454f;
-	margin: 0 auto;
+	margin-bottom: 0;
 	max-width: 100%;
 }
 nav ul {

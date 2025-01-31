@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Page</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/lion.jpg" media="(min-width: 768px)">
+                <img src="images/elephant.jpg" alt="Hero Image">
+            </picture>
+
+            <section class="data">
+                <h2>Data</h2>
+                <p>Area: 923,768 km²</p>
+                <p>Capital: Abuja</p>
+                <p>Population: 206 million</p>
+                <p>Languages: English, Hausa, Yoruba, Igbo</p>
+                <p>Currency: Nigerian Naira (NGN)</p>
+                <p>Timezone: WAT (UTC+1)</p>
+                <p>Calling Code: +234</p>
+                <p>Internet TLD: .ng</p>
+            </section>
+
+            <section class="weather">
+                <h2>Weather <span class="weather-icon">⛅</span></h2>
+                <p>Temperature: <span id="temperature">5</span>°C</p>
+                <p>Wind Speed: <span id="wind-speed">10</span> km/h</p>
+                <p>Wind Chill: <span id="wind-chill">Calculating...</span></p>
+            </section>
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; 2025 🦅 Victor Uchechukwu Anwuacha 🦅 Nigeria</p>
+        <p id="last-modified" class="active"></p>
+        
+    </footer>
+</body>
+</html>

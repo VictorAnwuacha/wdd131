@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color:green;
+    color: white;
+    padding: 1rem;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    max-height: 700px;
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+.hero picture img {
+    width: 100%;
+    height: auto;
+   
+}
+
+.weather {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.813);
+    color: black;
+    padding: 15px;
+    width: auto;
+}
+
+.weather h2 {
+    margin: 0;
+    background-color: green;
+    color: white;
+    margin-left: -20px;
+    text-align: left;
+    padding: 10px;
+}
+
+.data {
+    position: absolute;
+    margin-top: 20px;
+    top: 10px;
+    left: 10px;
+    background: rgba(255, 255, 255, 0.813);
+    padding: 15px;
+    width: 250px;
+}
+
+.data h2 {
+    margin: 0;
+    background-color: green;
+    color: white;
+    margin-left: -20px;
+    text-align: left;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .weather, .data {
+        position: static;
+        width: auto;
+        margin: 10px auto;
+        display: block;
+    }
+
+    .hero {
+        max-height: 1000px;
+    }
+
+    
+}
+
+@media screen and (max-width: 768px) {
+    .data h2, .weather h2 {
+        background: none !important;
+        color: black;
+        text-align: center;
+    }
+}
+
+footer {
+    background-color: green;
+    color: #fff;
+	align-items: center;
+	justify-content: center;
+    text-align: center;
+	padding: 10px;
+}
+
+ footer p {
+	margin: 0.25rem;
+	padding: 0.5rem 0.75rem;
+}

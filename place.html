@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Place Page</title>
+    <meta name="description" content="WDD 131 Dynamic Web Fundamentals | Country Page">
+    <meta name="author" content="Victor Annwuacha">
     <link rel="stylesheet" href="styles/place.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@100;400&display=swap" rel="stylesheet">  
     <script src="scripts/place.js" defer></script>
 </head>
 <body>
@@ -32,11 +35,17 @@
 
             <section class="weather">
                 <h2>Weather <span class="weather-icon">⛅</span></h2>
+            
+                <picture class="weather-svg">
+                    <source srcset="images/weathericon.svg" media="(max-width: 768px)">
+                    <img src="images/weathericon.svg" alt="Weather Icon" width="20px">
+                </picture>
+            
                 <p>Temperature: <span id="temperature">5</span>°C</p>
                 <p>Wind Speed: <span id="wind-speed">10</span> km/h</p>
                 <p>Wind Chill: <span id="wind-chill">Calculating...</span></p>
             </section>
-        </section>
+            
         
     </main>
     <footer>

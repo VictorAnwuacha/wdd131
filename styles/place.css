@@ -1,13 +1,21 @@
+:root {
+    --primary-color: green;
+    --secondary-color: white;
+    --text-color: black;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Montserrat", serif;
+    font-weight: 400;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
+
 header {
-    background-color:green;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     padding: 1rem;
 }
 
@@ -30,15 +38,15 @@ header {
     bottom: 20px;
     right: 20px;
     background: rgba(255, 255, 255, 0.813);
-    color: black;
+    color: var(--text-color);
     padding: 15px;
     width: auto;
 }
 
 .weather h2 {
     margin: 0;
-    background-color: green;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     margin-left: -20px;
     text-align: left;
     padding: 10px;
@@ -56,8 +64,8 @@ header {
 
 .data h2 {
     margin: 0;
-    background-color: green;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     margin-left: -20px;
     text-align: left;
     padding: 10px;
@@ -73,15 +81,13 @@ header {
 
     .hero {
         max-height: 1000px;
-    }
-
-    
+    } 
 }
 
 @media screen and (max-width: 768px) {
     .data h2, .weather h2 {
         background: none !important;
-        color: black;
+        color: var(--text-color);
         text-align: center;
     }
 
@@ -117,8 +123,8 @@ header {
 
 
 footer {
-    background-color: green;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 	align-items: center;
 	justify-content: center;
     text-align: center;
@@ -128,6 +134,12 @@ footer {
  footer p {
 	margin: 0.25rem;
 	padding: 0.5rem 0.75rem;
+}
+
+
+footer p:first-child::after {
+    content: " 🌍";
+    display: inline-block;
 }
 
 

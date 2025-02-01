@@ -6,7 +6,6 @@
 
 body {
     font-family: "Montserrat", sans-serif;
-    font-weight: 400;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -17,8 +16,6 @@ header {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     padding: 1rem;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
 }
 
 .hero {

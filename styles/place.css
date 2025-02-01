@@ -5,7 +5,8 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Montserrat", serif;
+    font-weight: 100;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -16,6 +17,8 @@ header {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     padding: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
 }
 
 .hero {
@@ -24,11 +27,12 @@ header {
     max-height: 700px;
     overflow: hidden;
     padding-top: 20px;
+    display: block;
 }
 
 .hero picture img {
     width: 100%;
-    height: auto;
+    height: 100%;
    
 }
 
@@ -53,7 +57,7 @@ header {
 
 .data {
     position: absolute;
-    margin-top: 20px;
+    margin-top: 40px;
     top: 10px;
     left: 10px;
     background: rgba(255, 255, 255, 0.813);

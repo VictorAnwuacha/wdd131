@@ -1,0 +1,40 @@
+/* Responsive Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive column sizing */
+    gap: 15px; 
+    padding: 20px;
+    justify-content: center;
+}
+
+/* Larger Screens (Desktop & Tablets) */
+@media (min-width: 768px) {
+    .hamburger {
+        display: none; 
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: row; 
+        gap: 16px;
+        background: none;
+        padding: 0;
+    }
+
+    /* Ensure gallery displays three columns on larger screens */
+    .gallery {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
+/* Mobile View (Phones & Small Tablets) */
+@media (max-width: 767px) {
+    .hamburger {
+        display: block; 
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust for smaller screens */
+        gap: 10px;
+    }
+}

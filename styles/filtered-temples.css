@@ -1,0 +1,186 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Header & Navigation */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #2E5077;
+    color: #fff;
+}
+
+h1 {
+    margin: 0;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-menu li {
+    margin: 0;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    /* transition: 0.3s; */
+}
+
+.nav-menu button:hover {
+    color: #36454f;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    background: none;
+    color: #fff;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        text-align: center;
+        top: 60px;
+        left: 0; 
+        right: 0;
+        background-color: #2E5077;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 15px; 
+        border-radius: 0; 
+        z-index: 10;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-menu li {
+        margin: 5px 0;
+    }
+}
+
+/* Temple Gallery */
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+figure {
+    text-align: center;
+    background-color: #fff;
+    padding: 15px;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+}
+
+figure img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #2E5077;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+.temple-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    background: rgb(237, 235, 235);
+    padding: 10px;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.temple-info {
+    width: 100%;
+    padding: 10px;
+}
+
+.temple-info h3 {
+    margin: 5px 0;
+    font-size: 1.2em;
+}
+
+.temple-info p {
+    margin: 3px 0;
+    font-size: 0.9em;
+}
+
+.temple-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0 0 30px gray;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover effect for better UX  */
+.temple-card img:hover {
+    transform: scale(1.03); 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+}

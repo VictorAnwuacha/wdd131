@@ -10,7 +10,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    background-color: #36454f;
+    background-color: #2E5077;
     color: #fff;
 }
 
@@ -57,7 +57,7 @@ h1 {
         top: 60px;
         left: 0; 
         right: 0;
-        background-color: #36454f;
+        background-color:#2E5077;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         padding: 20px; 
         border-radius: 0; 

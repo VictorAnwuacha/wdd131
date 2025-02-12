@@ -218,7 +218,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.addEventListener("DOMContentLoaded", () => {
         const templeGallery = document.querySelector("#temple-gallery");
-        const filterButtons = document.querySelectorAll(".filter-btn");
+        const filterLinks = document.querySelectorAll(".nav-menu a");
+        const lastModifiedElement = document.querySelector("#last-modified");
+    
+        // Temple Data
+        const temples = [
+            { templeName: "Aba Nigeria", location: "Aba, Nigeria", dedicated: "2005-08-07", area: 11500, imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg" },
+            { templeName: "Manti Utah", location: "Manti, Utah, United States", dedicated: "1888-05-21", area: 74792, imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg" },
+            { templeName: "Payson Utah", location: "Payson, Utah, United States", dedicated: "2015-06-07", area: 96630, imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg" },
+            { templeName: "Yigo Guam", location: "Yigo, Guam", dedicated: "2020-05-02", area: 6861, imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg" },
+            { templeName: "Washington D.C.", location: "Kensington, Maryland, United States", dedicated: "1974-11-19", area: 156558, imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg" },
+            { templeName: "Lima Perú", location: "Lima, Perú", dedicated: "1986-01-10", area: 9600, imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg" },
+            { templeName: "Mexico City Mexico", location: "Mexico City, Mexico", dedicated: "1983-12-02", area: 116642, imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg" },
+            { templeName: "Atlanta Georgia", location: "Atlanta, Georgia", dedicated: "1983-06-01", area: 34500, imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/atlanta-georgia-temple/atlanta-georgia-temple-13940-main.jpg" },
+            { templeName: "Bountiful Utah", location: "Bountiful, Utah", dedicated: "1995-01-08", area: 104000, imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/bountiful-utah-temple/bountiful-utah-temple-40955-main.jpg" }
+        ];
     
         // Function to display temples
         function displayTemples(filteredTemples) {
@@ -240,7 +254,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 const img = document.createElement("img");
                 img.src = temple.imageUrl;
                 img.alt = temple.templeName;
-                img.loading = "lazy";
+                img.loading = "lazy"; // Lazy loading
     
                 figure.appendChild(infoContainer);
                 figure.appendChild(img);
@@ -273,15 +287,21 @@ document.addEventListener("DOMContentLoaded", () => {
             displayTemples(filteredList);
         }
     
-        // Event Listeners for navigation menu buttons
-        filterButtons.forEach(button => {
-            button.addEventListener("click", () => {
-                const filter = button.getAttribute("data-filter");
+        // Event Listeners for navigation menu links
+        filterLinks.forEach(link => {
+            link.addEventListener("click", (event) => {
+                event.preventDefault(); // Prevent page refresh
+                const filter = link.getAttribute("data-filter");
                 filterTemples(filter);
             });
         });
     
         // Initial display (show all temples on page load)
         displayTemples(temples);
+    
+        // Update last modified date
+        if (lastModifiedElement) {
+            lastModifiedElement.textContent = `Last Modified: ${document.lastModified}`;
+        }
     });
     

@@ -44,7 +44,7 @@ h1 {
     /* transition: 0.3s; */
 }
 
-.nav-menu button:hover {
+.nav-menu a:hover {
     color: #36454f;
     background-color: #fff;
     padding: 5px 10px;

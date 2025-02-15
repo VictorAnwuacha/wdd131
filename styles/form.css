@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header, footer {
+    text-align: center;
+    background-color: #004080;
+    color: white;
+    padding: 10px;
+}
+
+main {
+    max-width: 500px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label, legend {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input, select, textarea {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #004080;
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #002855;
+}
+
+fieldset {
+    border: none;
+    margin: 10px 0;
+}
+
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse; 
+    justify-content: start;
+    gap: 5px;
+    border: none;
+}
+
+.rating input {
+    display: none; 
+}
+
+.rating label {
+    font-size: 2rem;
+    color: gray;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+/* Change star color on hover and selection */
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+    color: gold;
+}
+
+.features {
+    display: flex;
+    flex-direction: column; 
+    gap: 5px; 
+}

@@ -64,6 +64,11 @@ h1 {
         z-index: 10;
     }
 
+    header h1 {
+        padding-right: 5000px;
+        text-align: center;
+    }
+
     .hamburger {
         display: block;
     }

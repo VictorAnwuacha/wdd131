@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 Dynamic Web Fundamentals | Music Calendar Page">
+    <title>Music Event Calendar</title>
+    <meta name="author" content="Victor Anwuacha">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/site.css">
+    <script src="scripts/site.js"></script>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <img src="images/vibefest.png" alt="Music Event Calendar Logo" class="logo">
+        <h1>Music Event Calendar</h1>
+        <button class="hamburger" aria-label="Toggle menu">
+            ☰
+        </button>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h2>Discover Live Music Events Near You</h2>
+        <p>Find concerts, festivals, and music events based on your location and favorite genres.</p>
+        <a href="events.html" class="btn">Explore Events</a>
+    </section>
+
+    <!-- Site Purpose -->
+    <section id="site-purpose">
+        <h2>Our Mission</h2>
+        <p>The <strong>Music Event Calendar</strong> is your ultimate hub for discovering and tracking upcoming concerts, festivals, and music events. Whether you're looking for local gigs, large festivals, or exclusive artist performances, we've got you covered.</p>
+        <p>We provide up-to-date event details, venue locations, ticket prices, and direct links to ticket purchasing platforms.</p>
+    </section>
+
+    <!-- User Scenarios -->
+    <section id="scenarios">
+        <h2>How Can We Help?</h2>
+        <div class="scenario">
+            <h3>🎸 Find Events in Your City</h3>
+            <p>Looking for concerts happening in your city this month? Use our event filter to browse music events near you.</p>
+            <a href="events.html" class="btn">Find Local Events</a>
+        </div>
+        <div class="scenario">
+            <h3>🎟️ Buy Tickets for Music Festivals</h3>
+            <p>Want to secure tickets for an upcoming festival? Click on an event to get ticket details and purchasing options.</p>
+            <a href="events.html" class="btn">Get Tickets</a>
+        </div>
+    </section>
+
+    <!-- Featured Events -->
+    <section id="featured-events">
+        <h2>Upcoming Events</h2>
+        <div class="event-grid">
+            <div class="event-card">
+                <img src="images/rock.jpeg" alt="Rock Festival">
+                <h3>Rock Festival 2025</h3>
+                <p><strong>Date:</strong> March 10, 2025</p>
+                <p><strong>Location:</strong> Los Angeles, CA</p>
+                <a href="#" class="btn">More Info</a>
+            </div>
+            <div class="event-card">
+                <img src="images/jazz.jpg" alt="Jazz Night">
+                <h3>Jazz Night Live</h3>
+                <p><strong>Date:</strong> April 5, 2025</p>
+                <p><strong>Location:</strong> New Orleans, LA</p>
+                <a href="#" class="btn">More Info</a>
+            </div>
+            <div class="event-card">
+                <img src="images/edm.jpeg" alt="EDM Party">
+                <h3>EDM Party</h3>
+                <p><strong>Date:</strong> May 15, 2025</p>
+                <p><strong>Location:</strong> Miami, FL</p>
+                <a href="#" class="btn">More Info</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Events -->
+    <section id="filter-events">
+        <h2>Find Your Next Music Experience</h2>
+        <form id="event-search">
+            <label for="location">Enter your city:</label>
+            <input type="text" id="location" placeholder="e.g., New York">
+            <label for="genre">Select Genre:</label>
+            <select id="genre">
+                <option value="all">All Genres</option>
+                <option value="rock">Rock</option>
+                <option value="pop">Pop</option>
+                <option value="jazz">Jazz</option>
+                <option value="hip-hop">Hip-Hop</option>
+                <option value="edm">EDM</option>
+            </select>
+            <button type="submit">Search Events</button>
+        </form>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+        <h2>What Our Users Say</h2>
+        <div class="testimonial">
+            <p>"This site makes it so easy to find concerts! I never miss a show in my area anymore!"</p>
+            <span>- Alex M.</span>
+        </div>
+        <div class="testimonial">
+            <p>"I love the ticket links and event details. I found an amazing festival last summer thanks to this site!"</p>
+            <span>- Sarah L.</span>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section id="newsletter">
+        <h2>Stay Updated</h2>
+        <p>Subscribe to receive the latest music events straight to your inbox.</p>
+        <input type="email" placeholder="Enter your email">
+        <button>Subscribe</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Victor Uchechukwu Anwuacha | Nigeria</p>
+        <p id="last-modified" class="active"></p>
+        
+    </footer>
+
+</body>
+</html>

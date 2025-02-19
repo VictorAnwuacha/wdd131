@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 Dynamic Web Fundamentals | Contact Us Page">
+    <title>Contact Us</title>
+    <meta name="author" content="Victor Anwuacha">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/site.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <script src="scripts/contact.js"></script> 
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <img src="images/vibefest.png" alt="Music Event Calendar Logo" class="logo">
+        <h1>Music Event Calendar</h1>
+        <button class="hamburger" aria-label="Toggle menu">
+            ☰
+        </button>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Contact Form Section -->
+    <main>
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <p>We'd love to hear from you! Fill out the form below, and we'll get back to you shortly.</p>
+            
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Victor Uchechukwu Anwuacha | Nigeria</p>
+        <p id="last-modified" class="active"></p>
+        
+    </footer>
+
+</body>
+</html>

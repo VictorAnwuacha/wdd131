@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 Dynamic Web Fundamentals | Events Page">
+    <title>Music Events</title>
+    <meta name="author" content="Victor Anwuacha">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/site.css">
+    <script src="scripts/events.js" defer></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <img src="images/vibefest.png" alt="Music Event Calendar Logo" class="logo">
+        <h1>Music Event Calendar</h1>
+        <button class="hamburger" aria-label="Toggle menu">
+            ☰
+        </button>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Event List Section -->
+    <main>
+        <section id="event-list">
+            <h2>Upcoming Music Events</h2>
+            <div id="filter-controls">
+                <label for="city-filter">City:</label>
+                <select id="city-filter">
+                    <option value="all">All</option>
+                </select>
+                
+                <label for="genre-filter">Genre:</label>
+                <select id="genre-filter">
+                    <option value="all">All</option>
+                </select>
+            </div>
+            <div id="events-container">
+                <!-- Event Cards will be dynamically inserted here by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Victor Uchechukwu Anwuacha | Nigeria</p>
+        <p id="last-modified" class="active"></p>
+        
+    </footer>
+</body>
+</html>

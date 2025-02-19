@@ -1,0 +1,131 @@
+/* Contact Page Styles */
+#contact {
+    max-width: 600px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+header img {
+    height: 100px;
+    padding-left: 10px;
+}
+
+#contact p {
+    font-size: 1.1em;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+form {
+    background: #31363F;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 106, 0, 0.4);
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #FFD369;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #FFD369;
+    font-size: 1em;
+    background: #222831;
+    color: #fff;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #EE0979;
+    box-shadow: 0 0 5px rgba(238, 9, 121, 0.5);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #FFD369;
+    color: #222831;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #EE0979;
+    color: #fff;
+}
+
+/* Hamburger Button */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #FFD369;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Show on mobile */
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background: #222831;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show when active */
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        gap: 15px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-links li {
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid #393E46;
+    }
+
+    .nav-links li a {
+        font-size: 1.2rem;
+        display: block;
+        color: #FFD369;
+    }
+
+    .nav-links li a:hover {
+        color: #EE0979;
+    }
+}
